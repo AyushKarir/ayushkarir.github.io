@@ -9,6 +9,13 @@
     max-width: 100vw !important;
     overflow: hidden;
 }
+.hello{
+    width: 475px;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    user-select: none;
+    z-index: 100;
+}
 .main-container{
     overflow: hidden;
     position: relative;
@@ -19,15 +26,27 @@
     height: 100vh;
     width: 1px;
     background-color: #e9e9e9;
-    left: 60vh;
+    left: 30vw;
+    top: 0;
+    z-index: -1;
 }
-.bgl1::before{
-    content: '';
+.bgl2{
     position: absolute;
     height: 100vh;
     width: 1px;
     background-color: #e9e9e9;
-    left: 60vh;
+    left: 60vw;
+    top: 0;
+    z-index: -1;
+}
+.bgl3{
+    position: absolute;
+    height: 100vh;
+    width: 1px;
+    background-color: #e9e9e9;
+    left: 90vw;
+    top: 0;
+    z-index: -1;
 }
 .des{
     font-size: 31px;
@@ -92,12 +111,13 @@
 	position: absolute;
 	opacity: 0;
 	overflow: hidden;
+    font-weight: 600;
     color: #D90368;
 	animation: rotateWord 18s  infinite 0s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .rw-words-1 span:nth-child(2) { 
 	animation-delay: 3s; 
-    color: #D90368;
+    color: #239AED;
 }
 .rw-words-1 span:nth-child(3) {  
 	animation-delay: 6s; 
@@ -106,7 +126,7 @@
 .rw-words-1 span:nth-child(4) { 
 
 	animation-delay: 9s; 
-    color: #D90368;
+    color: #239AED;
 }
 .rw-words-1 span:nth-child(5) { 
 	animation-delay: 12s; 
@@ -114,7 +134,7 @@
 }
 .rw-words-1 span:nth-child(6) { 
 	animation-delay: 15s; 
-    color: #D90368;
+    color: #239AED;
 }
 @keyframes rotateWord {
     0% {
@@ -224,7 +244,7 @@ main {
 
   }
   main div p{
-    transform: translate(35%,70%);
+    transform: translate(35%,50%);
     font-size: 25px;
     color: #555;
     z-index: 100;
@@ -252,11 +272,17 @@ main {
      .heart{
         width: 20px;
     } 
+    .hello{
+        width: 325px;
+    }
 }
 @media only screen and (max-width: 840px){
  .rw-sentence span{
         font-size: 20px;
     } 
+    .hello{
+        width: 250px;
+    }
 
 }
 
