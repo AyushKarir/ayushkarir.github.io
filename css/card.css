@@ -1,0 +1,25 @@
+.card-cont {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 6px 8px 12px 3px #bcbcbc;
+}
+.card-image {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card-title {
+}
+.card-info {
+}
+.card-cont:hover .card-title {
+  margin-left: 20px;
+}
+.card-cont:hover .card-info {
+  margin-left: 20px;
+}
