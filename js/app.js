@@ -1,22 +1,65 @@
-(function() {
-  const link = document.querySelectorAll("nav > .hover-this");
-  const cursor = document.querySelector(".cursor");
-  const animateit = function(e) {
-    const span = this.querySelector("span");
-    const { offsetX: x, offsetY: y } = e,
-      { offsetWidth: width, offsetHeight: height } = this,
-      move = 25,
-      xMove = (x / width) * (move * 2) - move,
-      yMove = (y / height) * (move * 2) - move;
-    span.style.transform = `translate(${xMove}px, ${yMove}px)`;
-    if (e.type === "mouseleave") span.style.transform = "";
-  };
-  const editCursor = e => {
-    const { clientX: x, clientY: y } = e;
-    cursor.style.left = x + "px";
-    cursor.style.top = y + "px";
-  };
-  link.forEach(b => b.addEventListener("mousemove", animateit));
-  link.forEach(b => b.addEventListener("mouseleave", animateit));
-  window.addEventListener("mousemove", editCursor);
-})();
+TweenMax.from(".logo", 3, {
+  opacity: 0,
+  y: -20,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".ayushkarir", 3, {
+  opacity: 0,
+  y: -20,
+  delay: 0.1,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".intro", 3, {
+  delay: 1,
+  opacity: 0,
+  y: 20,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".trans-about", 3, {
+  delay: 0.2,
+  opacity: 0,
+  y: -20,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".trans-works", 3, {
+  delay: 0.4,
+  opacity: 0,
+  y: -20,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".ayush", 3, {
+  delay: 0.2,
+  opacity: 0,
+  y: -20,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".card1", 3, {
+  delay: 1.2,
+  opacity: 0,
+  y: -20,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".trans-page2-works", 3, {
+  delay: 1.2,
+  opacity: 0,
+  y: -20,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".trans-page2-info", 3, {
+  delay: 1.2,
+  opacity: 0,
+  y: -20,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".card2", 3, {
+  delay: 1.2,
+  opacity: 0,
+  y: -20,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".card3", 3, {
+  delay: 1.2,
+  opacity: 0,
+  y: -20,
+  ease: Expo.easeInOut
+});
