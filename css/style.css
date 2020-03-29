@@ -10,6 +10,12 @@
   src: url("operator.otf");
   font-family: operator;
 }
+body {
+  -webkit-user-select: none;
+}
+a {
+  text-decoration: none;
+}
 .bgl1 {
   position: fixed;
   height: 100vh;
